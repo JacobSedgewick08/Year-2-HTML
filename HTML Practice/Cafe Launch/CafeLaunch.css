@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Nunito Sans", sans-serif;
+    color: #fff;
+    background-image: radial-gradient(white, black);
+    font-size: 1rem;
+}
+
+header{
+    position: sticky;
+    background-color: black;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 60px;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+h2{
+    color: #fff;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+li a{
+    color: white;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+li a:visited{
+    color: #fff;
+}
+
+
+.introduction-image{
+    display: inline-block;
+}
+
+#introduction{
+    margin: 50px;
+    background-color: hsla(0, 0%, 0%, 0.541);
+    animation-name: Slide-In;
+    animation-duration: 3s;
+    animation-delay: 0.7s;
+}
+
+.introduction-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.introduction-image-container{
+    margin-right: 10px;
+}
+
+.introduction-caption{
+    font-size: 1.5rem;
+}
+
+.introduction-message{
+    line-height: 1.7;
+}
+
+#Offers{
+    background-color: hsla(0, 0%, 0%, 0.548);
+    font-family: "Cabin", sans-serif;
+}
+
+.Offers-wrapper{
+    display: flex;
+    justify-content: space-around;
+}
+
+.Offers-image-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Offers-caption{
+    font-size: 1.5rem;;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.branding{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo{
+    height: 60px;
+    width: auto;
+}
+
+.branding h2 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer{
+    position: sticky;
+    bottom: 0;
+    text-align: center;
+    padding: 1rem;
+    background-color: #56445D;
+    width: 100%;
+}
+
+
+/* || Animations*/
+@keyframes Slide-In{
+    0%{
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+
+    33%{
+        opacity: 0.6;
+        transform: translateX(-10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.opening-hours-img{
+    display: block;
+    margin: 0 auto;
+    width: 500px;
+    height: auto;
+}
